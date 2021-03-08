@@ -11,7 +11,7 @@ import Population as p
 import Constants as c
 
 
-class AcorContiniousDomain(object):
+class AcorContinuousDomain(object):
     """
     Ant Colony Optimization for Continuous Domains (ACOR) in Python.
 
@@ -38,7 +38,7 @@ class AcorContiniousDomain(object):
         :param: n_pop: population size
         :param: n_vars: number of variables
         :param: cost_func_ cost function
-        :param: domain_bounds: continious domain lower/upper bounds
+        :param: domain_bounds: Continuous domain lower/upper bounds
         """
         self.__domain_bounds = domain_bounds
         self.__l_bound = domain_bounds[0]

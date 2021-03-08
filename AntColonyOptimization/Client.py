@@ -35,7 +35,7 @@ class Client(object):
         Entry Point used to run the ACO algorithm
         """
         start_time = u.Helpers.getStartTime()
-        acor = a.AcorContiniousDomain(n_pop=self.__n_pop, 
+        acor = a.AcorContinuousDomain(n_pop=self.__n_pop, 
                                        n_vars=self.__n_vars, 
                                        cost_func=self.__cost_func, 
                                        domain_bounds=self.__domain_bounds)
@@ -97,7 +97,7 @@ def runAcoClient():
     c.AcoConstants.MAX_ITERATIONS = 1000
     print(f"{c.HelperConstants.DIVIDER}")
     print(f"{c.HelperConstants.CARRIAGE_RETURN}")
-    print(f"Start of the demonstration of the minimization of the continious domain function {func_title} using Ant Colony Optimization..")
+    print(f"Start of the demonstration of the minimization of the Continuous domain function {func_title} using Ant Colony Optimization..")
     print(f"{c.HelperConstants.CARRIAGE_RETURN}")
     client = Client(n_pop=n_pop, 
                  n_vars=n_vars, 
